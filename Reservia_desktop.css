@@ -24,11 +24,6 @@ header {
 	justify-content: space-between;
 }
 
-nav {
-	width: 300px;
-	top: 0px;
-}
-
 nav ul {
 	display: flex;
 	justify-content: space-between;
@@ -38,7 +33,10 @@ nav ul {
 
 nav li {
 	list-style: none;
-	margin-left: 15px;
+	margin-left: 30px;
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 nav a {
@@ -48,7 +46,10 @@ nav a {
 
 #border_blue {
 	border-top: 3px solid #0065FC;
-	
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #0065FC;
 }
 
 #log {
@@ -346,17 +347,26 @@ h3 {
 	flex-direction: column;
 	padding-left: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	font-size: small;
 <<<<<<< HEAD
 =======
 	align-content: center;
 =======
 	justify-content: space-between;
+=======
+>>>>>>> develop
 	margin-bottom: 5px;
+	padding-right: 10px;
+}
+
+.txtpopulairex h2 {
+	margin-bottom: 0px;
 }
 
 .txtpopulairex .rating {
 	padding-left: 0px;
+	margin-top: 35px;
 }
 
 #populaire1 {
@@ -365,7 +375,6 @@ h3 {
 }
 
 #Activites {
-	width: 1310px;
 	height: 550px;
 	margin-top: 30px;
 }
@@ -388,9 +397,7 @@ h3 {
 #bulles_activites {
 	display: flex;
 	flex-wrap: wrap;
-	padding-right: 30px;
 	justify-content: space-between;
-	align-items: center;
 }
 
 .activitex img {
@@ -455,6 +462,7 @@ h3 {
 #activite5 {
 	width: auto;
 	height: 200px;
+	margin-right: 0px;
 }
 
 #activite6 img {
@@ -466,11 +474,12 @@ h3 {
 	width: auto;
 	height: 200px;
 	margin-top: 50px;
+	margin-right: 0px;
 }
 
 footer {
-	width: auto;
 	display: flex;
+	width: 100%;
 	margin-top: 30px;
 <<<<<<< HEAD
 >>>>>>> develop
