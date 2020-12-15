@@ -477,3 +477,11 @@ footer ul li {
 	width: 400px;
 	padding-top: 30px;
 }
+
+/* +++ SMARTPHONES PORTRAIT +++ */
+@media all and (max-width : 375px) {
+	#logo {
+		width: 50%;
+		height: 50%;
+	}
+}
