@@ -104,6 +104,10 @@ h3 {
 	width: 100px;
 }
 
+#searchbutton-loupe {
+	visibility: hidden;
+}
+
 ::placeholder {
 	font-weight: bold;
 	color: black;
@@ -479,9 +483,163 @@ footer ul li {
 }
 
 /* +++ SMARTPHONES PORTRAIT +++ */
-@media all and (max-width : 375px) {
+@media screen and (max-width : 375px) {	
 	#logo {
-		width: 50%;
-		height: 50%;
+		width: 33%;
+		height: auto;
 	}
+
+	header {
+		flex-wrap: wrap;
+	} 
+
+	nav {
+		width: 100%;
+	}
+
+	nav ul {
+		flex-wrap: wrap-reverse;
+	}
+
+	nav li {
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#h-link {
+		width: 50%;
+     	text-align: center;
+		border-bottom: solid 3px #0065fc;
+		color: #0065fc;
+		padding-bottom: 10px;
+		position: relative;
+		transition: color 0.5s;
+	}
+
+	#a-link {
+		width: 50%;
+		text-align: center;
+		border-bottom: solid 3px #f2f2f2;
+		padding-bottom: 10px;
+		position: relative;
+		transition: color 0.5s;
+	}
+
+	#log-link {
+		position: relative;
+		bottom: 56px;
+		margin-right: 5%;
+		left: 250px;
+	}
+
+	nav a:hover {
+		border-top: 0px solid #ffffff;
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#Sous-titres {
+		margin: 30px 5% 0 5%;
+	}
+
+	#Sous-titres h2 {
+		font-size: 1.3rem;
+	}
+
+	#Sous-titres h3 {
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	#searchbutton-loupe {
+		visibility: visible;
+		position: absolute;
+		height: 50px;
+		width: 50px;
+        border: none;     
+        border-radius: 16px 16px 16px 16px;     
+        background-color: #0065fc;     
+        color: #f2f2f2;     
+        font-weight: bold;     
+		padding: 15px;    
+		margin-left: -26px;      
+	}
+
+	#searchbutton {
+		visibility: hidden;
+		width: 0px;
+	}
+
+	#searchtxt {
+		width: 220px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	#searchbar {
+		justify-content: flex-start;
+		margin-left: 15px;
+	}
+
+	#Filtres {
+		flex-wrap: wrap;
+		margin-left: 15px;
+		padding-right: 10px;
+	}
+
+	#Filtres p {
+		margin-right: 200px;
+	}
+
+	.f-button {
+		margin-left: 0;
+		margin-right: 10px;
+		padding-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	#info {
+		margin-left: 15px;
+	}
+
+	#reservations {
+		flex-direction: column-reverse;
+	}
+
+	#chambres-pop {
+		width: 100%;
+		margin: 0;
+		border-radius: 0 0 0;
+		padding-left: 10px;
+		height: auto;
+		padding-bottom: 40px;
+	}
+
+	.populaire-x {
+		width: auto;
+		height: auto;
+	}
+
+	.populaire-x img {
+		height: 115px;
+		width: 128px;
+		padding: 5px;
+	}
+
+	.txt-populaire-x h2 {
+		font-size: 0.9rem;
+		font-weight: normal;
+	}
+
+	.txt-populaire-x h3 {
+		font-size: 0.8rem;
+	}
+
+	.txt-populaire-x .rating {
+		margin-top: 0;
+	}
+
 }
+
