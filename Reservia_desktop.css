@@ -118,7 +118,6 @@ h3 {
 
 #Filtres {
 	display: flex;
-	padding-right: 30px;
 	margin-top: 30px;
 }
 
@@ -169,7 +168,6 @@ h3 {
 
 #info {
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
 	margin-top: 20px;
 }
@@ -191,14 +189,10 @@ h3 {
 
 #reservations {
 	display: flex;
-	justify-content: center;
 }
 
 #hebergements {
-	width: 800px;
-	height: 670px;
 	margin-top: 30px;
-	align-content: space-around;
 	background-color: #F2F2F2;
 	border-radius: 15px;
 }
@@ -213,7 +207,6 @@ h3 {
 	flex-wrap: wrap;
 	padding-left: 30px;
 	padding-right: 30px;
-	align-content: space-around;
 	justify-content: space-around;
 }
 
@@ -233,6 +226,7 @@ h3 {
 
 .hebergement-x h2 {
 	padding-left: 10px;
+	font-size: 0.8rem;
 }
 
 .hebergement-x h3 {
@@ -240,7 +234,6 @@ h3 {
 }
 
 .rating {
-	text-align: left;
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
@@ -261,8 +254,6 @@ h3 {
 }
 
 #chambres img {
-	max-width: 100%;
-	max-height: auto;
 	object-fit: cover;
 	width: 210px;
 	height: 120px;
@@ -274,12 +265,10 @@ h3 {
 }
 
 #chambres-pop {
-	display: flex;
-	flex-direction: column;
-	width: 450px;
-	height: 670px;
+	height: auto;
 	margin-top: 30px;
 	margin-left: 30px;
+	padding-bottom: 30px;
 	padding-left: 30px;
 	background-color: #F2F2F2;
 	border-radius: 15px;
@@ -293,10 +282,6 @@ h3 {
 	padding-top: 20px;
 }
 
-#bulles-pop {
-	align-items: center;
-}
-
 .populaire-x {
 	display: flex;
 	width: 380px;
@@ -308,8 +293,6 @@ h3 {
 }
 
 .populaire-x img {
-	max-width: 100%;
-	max-height: auto;
 	object-fit: cover;
 	width: 180px;
 	height: 150px;
@@ -325,7 +308,6 @@ h3 {
 	flex-direction: column;
 	padding-left: 10px;
 	font-size: small;
-	align-content: center;
 	justify-content: space-between;
 	margin-bottom: 5px;
 	padding-right: 10px;
@@ -333,6 +315,7 @@ h3 {
 
 .txt-populaire-x h2 {
 	margin-bottom: 0px;
+	font-size: 0.8rem;
 }
 
 .txt-populaire-x .rating {
@@ -345,8 +328,8 @@ h3 {
 }
 
 #Activites {
-	height: 550px;
 	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 .activite-x {
@@ -355,7 +338,6 @@ h3 {
 	background-color: #ffffff;
 	border-radius: 15px;
 	box-shadow: 0px 6px 6px rgb(156, 152, 152);
-	margin-right: 20px;
 	margin-top: 10px;
 }
 
@@ -366,13 +348,10 @@ h3 {
 
 #bulles-activites {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .activite-x img {
-	max-width: 100%;
-	max-height: auto;
 	object-fit: cover;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -381,6 +360,7 @@ h3 {
 .petites-bulles {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 #activite-1 img {
@@ -388,19 +368,9 @@ h3 {
 	height: 400px;
 }
 
-#activite-1 {
-	width: auto;
-	height: 450px;
-}
-
 #activite-2 img {
 	width: 280px;
 	height: 180px;
-}
-
-#activite-2 {
-	width: auto;
-	height: 230px;
 }
 
 #activite-3 img {
@@ -408,20 +378,9 @@ h3 {
 	height: 130px;
 }
 
-#activite-3 {
-	width: auto;
-	height: 180px;
-	margin-top: 40px;
-}
-
 #activite-4 img {
 	width: 280px;
 	height: 400px;
-}
-
-#activite-4 {
-	width: auto;
-	height: 450px;
 }
 
 #activite-5 img {
@@ -429,22 +388,9 @@ h3 {
 	height: 150px;
 }
 
-#activite-5 {
-	width: auto;
-	height: 200px;
-	margin-right: 0px;
-}
-
 #activite-6 img {
 	width: 280px;
 	height: 150px;
-}
-
-#activite-6 {
-	width: auto;
-	height: 200px;
-	margin-top: 50px;
-	margin-right: 0px;
 }
 
 .hebergement-x:hover,
@@ -459,7 +405,6 @@ footer {
 	width: 100%;
 	margin-top: 30px;
 	background-color: #F2F2F2;
-	padding-left: 20px;
 	justify-content: center;
 	margin-bottom: 0px;
 }
@@ -487,11 +432,12 @@ footer ul li {
 /* +++ SMARTPHONES PORTRAIT +++ */
 @media screen and (max-width : 375px) {	
 	html {
-		height: auto;
+		height: 100%;
 	}
 	
 	body {
 		margin: 0;
+		min-height: 100%;
 	}
 	
 	#logo {
@@ -623,7 +569,7 @@ footer ul li {
 		width: 100%;
 		margin: 0;
 		border-radius: 0 0 0;
-		padding-left: 10px;
+		padding-left: 15px;
 		height: auto;
 		padding-bottom: 40px;
 	}
@@ -713,9 +659,12 @@ footer ul li {
 		margin-bottom: 10px;
 	}
 
+	#bulles-activites {
+		display: block;
+	}
+
 	footer {
 		flex-direction: column;
-		order: 1;
 	}
 }
 
