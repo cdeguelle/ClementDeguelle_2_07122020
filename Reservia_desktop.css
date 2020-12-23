@@ -699,7 +699,7 @@ footer ul li {
 }
 
 /* +++ IPhone Paysage +++ */
-@media screen and (max-width : 668px) {
+@media screen and (orientation: landscape) and (max-width : 668px) {
 	html {
 		height: 100%;
 	}
