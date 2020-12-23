@@ -62,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-	border-top: 3px solid #0065FC !important;
+	border-top: 4px solid #0065FC !important;
 	color: #0065FC;
 }
 
@@ -487,6 +487,11 @@ footer ul li {
 		padding-right: 0;
 	}
 
+	nav a:hover {
+		border-top: 3px solid #ffffff !important;
+		color: #0065FC;
+	}
+
 	#h-link {
 		width: 50%;
      	text-align: center;
@@ -702,7 +707,7 @@ footer ul li {
 }
 
 /* +++ IPad +++ */
-@media screen and (min-width : 768px) {
+@media screen and (min-width : 768px) and (max-width : 1024px) {
 	nav li {
 		margin-left: 0;
 		padding-left: 0;
