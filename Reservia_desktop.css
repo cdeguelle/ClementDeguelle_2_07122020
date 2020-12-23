@@ -487,11 +487,6 @@ footer ul li {
 		padding-right: 0;
 	}
 
-	nav a:hover {
-		border-top: 3px solid #ffffff !important;
-		color: #0065FC;
-	}
-
 	#h-link {
 		width: 50%;
      	text-align: center;
@@ -519,10 +514,7 @@ footer ul li {
 	}
 
 	nav a:hover {
-		border-top: 0px solid #ffffff;
-		padding-top: 0px;
-		padding-left: 0px;
-		padding-right: 0px;
+		border-top: 0px solid #ffffff !important;
 	}
 
 	#Sous-titres {
@@ -706,6 +698,244 @@ footer ul li {
 	}
 }
 
+/* +++ IPhone Paysage +++ */
+@media screen and (max-width : 668px) {
+	html {
+		height: 100%;
+	}
+	
+	body {
+		margin: 0;
+		min-height: 100%;
+	}
+	
+	#logo {
+		width: 33%;
+		height: auto;
+		margin-left: 10px;
+	}
+
+	header {
+		flex-wrap: wrap;
+	} 
+
+	nav {
+		width: 100%;
+	}
+
+	nav ul {
+		flex-wrap: wrap-reverse;
+	}
+
+	nav li {
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#h-link {
+		width: 50%;
+     	text-align: center;
+		border-bottom: solid 3px #0065fc;
+		color: #0065fc;
+		padding-bottom: 10px;
+		position: relative;
+		transition: color 0.5s;
+	}
+
+	#a-link {
+		width: 50%;
+		text-align: center;
+		border-bottom: solid 3px #f2f2f2;
+		padding-bottom: 10px;
+		position: relative;
+		transition: color 0.5s;
+	}
+
+	#log-link {
+		position: relative;
+		bottom: 80px;
+		margin-right: 5%;
+		left: 500px;
+	}
+
+	nav a:hover {
+		border-top: 0px solid #ffffff !important;
+	}
+
+	#Sous-titres {
+		margin: 30px 5% 0 5%;
+	}
+
+	#Sous-titres h2 {
+		font-size: 1.3rem;
+	}
+
+	#Sous-titres h3 {
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	#searchbutton-loupe {
+		visibility: visible;
+		position: absolute;
+		height: 50px;
+		width: 50px;
+        border: none;     
+        border-radius: 16px 16px 16px 16px;     
+        background-color: #0065fc;     
+        color: #f2f2f2;     
+        font-weight: bold;     
+		padding: 15px;    
+		margin-left: -26px;      
+	}
+
+	#searchbutton {
+		visibility: hidden;
+		width: 0px;
+	}
+
+	#searchtxt {
+		width: 220px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	#searchbar {
+		justify-content: flex-start;
+		margin-left: 150px;
+	}
+
+	#Filtres {
+		flex-wrap: wrap;
+		margin-left: 15px;
+		padding-right: 10px;
+	}
+
+	#Filtres p {
+		margin-right: 500px;
+	}
+
+	.f-button {
+		margin-left: 0;
+		margin-right: 10px;
+		padding-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	#info {
+		margin-left: 15px;
+	}
+
+	#reservations {
+		flex-direction: column-reverse;
+	}
+
+	#chambres-pop {
+		width: 100%;
+		margin: 0;
+		border-radius: 0 0 0;
+		padding-left: 15px;
+		height: auto;
+		padding-bottom: 40px;
+	}
+
+	.populaire-x {
+		width: auto;
+		height: auto;
+	}
+
+	.populaire-x img {
+		height: 150px;
+		width: 200px;
+		padding: 5px;
+	}
+
+	.txt-populaire-x h2 {
+		font-size: 0.9rem;
+		font-weight: normal;
+	}
+
+	.txt-populaire-x h3 {
+		font-size: 0.8rem;
+	}
+
+	.txt-populaire-x .rating {
+		margin-top: 0;
+	}
+
+	#hebergements {
+		width: 100%;
+		height: auto;
+		margin-left: 8px;
+		background-color: #ffffff;
+	}
+
+	#titre-hebergements {
+		padding: 0;
+	}
+
+	#chambres {
+		padding: 0;
+	}
+
+	.hebergement-x {
+		margin-bottom: 10px;
+	}
+
+	#hebergement-4,
+	#hebergement-5,
+	#hebergement-6 {
+		margin-top: 10px;
+	}
+
+	#chambres img {
+		width: 200px;
+	}
+
+	#Activites {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	#activite-1 img,
+	#activite-2 img,
+	#activite-3 img,
+	#activite-4 img,
+	#activite-5 img,
+	#activite-6 img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.activite-x {
+		width: 200px;
+		height: 280px;
+		margin-top: 0;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	#titre-activites {
+		padding-left: 5px;
+	}
+
+	#bulles-activites {
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 5px;
+		justify-content: center;
+	}
+
+	.petites-bulles {
+		flex-direction: row;
+	}
+
+	.footer-content {
+		padding-left: 40px;
+	}
+}
+
 /* +++ IPad +++ */
 @media screen and (min-width : 768px) and (max-width : 1024px) {
 	nav li {
@@ -786,3 +1016,119 @@ footer ul li {
 	}
 }
 
+/* +++ IPad Paysage +++ */
+@media screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+	#logo {
+		padding-left: 30px;
+	}
+
+	#Sous-titres {
+		padding-left: 30px;
+	}
+
+	#searchbar {
+		padding-left: 30px;
+	}
+
+	#Filtres {
+		padding-left: 30px;
+	}
+	
+	nav li {
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	#Filtres {
+		flex-wrap: wrap;
+	}
+
+	#Filtres p {
+		margin-right: 30px;
+	}
+
+	.f-button {
+		padding-right: 0px;
+		margin-right: 30px;
+	}
+
+	#info {
+		padding-left: 30px;
+	}
+
+	#reservations {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#hebergements {
+		width: 80%;
+	}
+
+	.hebergement-x {
+		margin-top: 15px;
+	}
+
+	#hebergement-4,
+	#hebergement-5,
+	#hebergement-6 {
+		margin-top: 15px;
+	}
+
+	#chambres-pop {
+		width: 80%;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	#titre-pop {
+		padding-left: 30px;
+	}
+
+	#bulles-pop {
+		padding-left: 30px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.populaire-x img {
+		width: 280px;
+		height: 200px;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 15px;
+	}
+
+	.populaire-x {
+		width: 290px;
+		flex-direction: column;
+		margin-top: 20px;
+	}
+
+	#populaire-1 {
+		margin-top: 20px;
+	}
+
+	#bulles-activites {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	#titre-activites {
+		padding-left: 30px;
+	}
+
+	.activite-x {
+		margin-top: 30px;
+	}
+
+	#petites-bulles-2 {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	footer {
+		padding-left: 100px;
+	}
+}
