@@ -1,3 +1,4 @@
+/* + Police Raleway + */
 @font-face {
 	font-family: 'Raleway';
 	font-style: normal;
@@ -11,6 +12,7 @@
 		 url('./fonts/raleway-v18-latin-regular.svg#Raleway') format('svg'); 
 }
 
+/* +++ DESKTOP +++ */
 body {
 	background-color: #ffffff;
 	font-family: 'Raleway', sans-serif;
@@ -61,6 +63,7 @@ nav a {
 	padding-top: 25px;
 }
 
+/* + Barre bleue au survol + */
 nav a:hover {
 	border-top: 4px solid #0065FC !important;
 	color: #0065FC;
@@ -91,11 +94,11 @@ h3 {
 	font-weight: normal;
 }
 
-#searchbar {
+#search-bar {
 	display: flex;
 }
 
-#geobutton {
+#geo-button {
 	background-color:#F2F2F2;
 	border-top-left-radius: 25%;
 	border-bottom-left-radius: 25%;
@@ -104,12 +107,12 @@ h3 {
 	height: 50px;
 }
 
-#searchtxt {
+#search-txt {
 	border: solid 2px #F2F2F2;
 	height: 50px;
 }
 
-#searchbutton {
+#search-button {
 	background-color: #0065FC;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -120,10 +123,11 @@ h3 {
 	width: 100px;
 }
 
-#searchbutton-loupe {
+#search-button-loupe {
 	visibility: hidden;
 }
 
+/* + Style barre de recherche + */
 input[type="search"] {
 	padding-left: 20px;
 }
@@ -134,7 +138,7 @@ input[type="search"]::placeholder {
 	opacity: 1;
 }
 
-#Filtres {
+#filtres {
 	display: flex;
 	align-items: center;
 	margin-top: 30px;
@@ -161,6 +165,7 @@ input[type="search"]::placeholder {
 	transition: all 0.5s;
 }
 
+/* + Style dynamique au survol (filtres) + */
 .logo-button:hover {
 	transform: scale(1.05);
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
@@ -287,7 +292,7 @@ input[type="search"]::placeholder {
 	padding-right: 5px;
 }
 
-#chambres-pop {
+#pop {
 	height: auto;
 	margin-top: 30px;
 	margin-left: 30px;
@@ -350,7 +355,7 @@ input[type="search"]::placeholder {
 	margin-top: 10px;
 }
 
-#Activites {
+#activites {
 	margin-top: 40px;
 	margin-bottom: 20px;
 }
@@ -369,7 +374,7 @@ input[type="search"]::placeholder {
 	font-weight: bold;
 }
 
-#bulles-activites {
+#liens-activites {
 	display: flex;
 	justify-content: space-between;
 }
@@ -380,7 +385,8 @@ input[type="search"]::placeholder {
 	border-top-right-radius: 15px;
 }
 
-.petites-bulles {
+/* + Liens "activités" avec une petite photo + */
+.petits-liens-activites {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -416,6 +422,7 @@ input[type="search"]::placeholder {
 	height: 150px;
 }
 
+/* + Style dynamique au survol + */
 .hebergement-x:hover,
 .populaire-x:hover,
 .activite-x:hover {
@@ -506,6 +513,7 @@ footer ul li {
 		transition: color 0.5s;
 	}
 
+	/* + Détachement du lien "log" par rapport au nav + */
 	#log-link {
 		position: relative;
 		bottom: 56px;
@@ -513,24 +521,26 @@ footer ul li {
 		left: 250px;
 	}
 
+	/* + Suppression de la barre bleue au dessus du lien au survol + */
 	nav a:hover {
 		border-top: 0px solid #ffffff !important;
 	}
 
-	#Sous-titres {
+	#subtitles {
 		margin: 30px 5% 0 5%;
 	}
 
-	#Sous-titres h2 {
+	#subtitles h2 {
 		font-size: 1.3rem;
 	}
 
-	#Sous-titres h3 {
+	#subtitles h3 {
 		font-size: 1rem;
 		font-weight: 500;
 	}
 
-	#searchbutton-loupe {
+	/* + Affichage du bouton loupe à la place du bouton "rechercher" + */
+	#search-button-loupe {
 		visibility: visible;
 		position: absolute;
 		height: 50px;
@@ -544,29 +554,29 @@ footer ul li {
 		margin-left: -26px;      
 	}
 
-	#searchbutton {
+	#search-button {
 		visibility: hidden;
 		width: 0px;
 	}
 
-	#searchtxt {
+	#search-txt {
 		width: 220px;
 		text-align: center;
 		font-weight: bold;
 	}
 
-	#searchbar {
+	#search-bar {
 		justify-content: flex-start;
 		margin-left: 15px;
 	}
 
-	#Filtres {
+	#filtres {
 		flex-wrap: wrap;
 		margin-left: 15px;
 		padding-right: 10px;
 	}
 
-	#Filtres p {
+	#filtres p {
 		margin-right: 200px;
 	}
 
@@ -585,7 +595,7 @@ footer ul li {
 		flex-direction: column-reverse;
 	}
 
-	#chambres-pop {
+	#pop {
 		width: 100%;
 		margin: 0;
 		border-radius: 0 0 0;
@@ -647,7 +657,7 @@ footer ul li {
 		width: 345px;
 	}
 
-	#Activites {
+	#activites {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
@@ -683,7 +693,7 @@ footer ul li {
 		padding-left: 5px;
 	}
 
-	#bulles-activites {
+	#liens-activites {
 		display: flex;
 		flex-direction: column;
 		padding-left: 5px;
@@ -763,20 +773,20 @@ footer ul li {
 		border-top: 0px solid #ffffff !important;
 	}
 
-	#Sous-titres {
+	#subtitles {
 		margin: 30px 5% 0 5%;
 	}
 
-	#Sous-titres h2 {
+	#subtitles h2 {
 		font-size: 1.3rem;
 	}
 
-	#Sous-titres h3 {
+	#subtitles h3 {
 		font-size: 1rem;
 		font-weight: 500;
 	}
 
-	#searchbutton-loupe {
+	#search-button-loupe {
 		visibility: visible;
 		position: absolute;
 		height: 50px;
@@ -790,29 +800,29 @@ footer ul li {
 		margin-left: -26px;      
 	}
 
-	#searchbutton {
+	#search-button {
 		visibility: hidden;
 		width: 0px;
 	}
 
-	#searchtxt {
+	#search-txt {
 		width: 220px;
 		text-align: center;
 		font-weight: bold;
 	}
 
-	#searchbar {
+	#search-bar {
 		justify-content: flex-start;
 		margin-left: 150px;
 	}
 
-	#Filtres {
+	#filtres {
 		flex-wrap: wrap;
 		margin-left: 15px;
 		padding-right: 10px;
 	}
 
-	#Filtres p {
+	#filtres p {
 		margin-right: 500px;
 	}
 
@@ -831,7 +841,7 @@ footer ul li {
 		flex-direction: column-reverse;
 	}
 
-	#chambres-pop {
+	#pop {
 		width: 100%;
 		margin: 0;
 		border-radius: 0 0 0;
@@ -893,7 +903,7 @@ footer ul li {
 		width: 200px;
 	}
 
-	#Activites {
+	#activites {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
@@ -920,14 +930,14 @@ footer ul li {
 		padding-left: 5px;
 	}
 
-	#bulles-activites {
+	#liens-activites {
 		display: flex;
 		flex-wrap: wrap;
 		padding-left: 5px;
 		justify-content: center;
 	}
 
-	.petites-bulles {
+	.petits-liens-activites {
 		flex-direction: row;
 	}
 
@@ -944,7 +954,7 @@ footer ul li {
 		padding-right: 0;
 	}
 	
-	#Filtres {
+	#filtres {
 		flex-wrap: wrap;
 	}
 
@@ -971,7 +981,7 @@ footer ul li {
 		margin-top: 15px;
 	}
 
-	#chambres-pop {
+	#pop {
 		width: 80%;
 		margin-left: 0;
 		padding-left: 0;
@@ -981,7 +991,7 @@ footer ul li {
 		padding-left: 30px;
 	}
 
-	#bulles-pop {
+	#chambres-pop {
 		padding-left: 30px;
 	}
 
@@ -998,7 +1008,7 @@ footer ul li {
 		width: 490px;
 	}
 
-	#bulles-activites {
+	#liens-activites {
 		justify-content: space-around;
 		flex-wrap: wrap;
 	}
@@ -1022,15 +1032,15 @@ footer ul li {
 		padding-left: 30px;
 	}
 
-	#Sous-titres {
+	#subtitles {
 		padding-left: 30px;
 	}
 
-	#searchbar {
+	#search-bar {
 		padding-left: 30px;
 	}
 
-	#Filtres {
+	#filtres {
 		padding-left: 30px;
 	}
 	
@@ -1040,11 +1050,11 @@ footer ul li {
 		padding-right: 0;
 	}
 	
-	#Filtres {
+	#filtres {
 		flex-wrap: wrap;
 	}
 
-	#Filtres p {
+	#filtres p {
 		margin-right: 30px;
 	}
 
@@ -1076,7 +1086,7 @@ footer ul li {
 		margin-top: 15px;
 	}
 
-	#chambres-pop {
+	#pop {
 		width: 80%;
 		margin-left: 0;
 		padding-left: 0;
@@ -1086,7 +1096,7 @@ footer ul li {
 		padding-left: 30px;
 	}
 
-	#bulles-pop {
+	#chambres-pop {
 		padding-left: 30px;
 		display: flex;
 		flex-wrap: wrap;
@@ -1109,7 +1119,7 @@ footer ul li {
 		margin-top: 20px;
 	}
 
-	#bulles-activites {
+	#liens-activites {
 		justify-content: space-around;
 		flex-wrap: wrap;
 	}
@@ -1122,7 +1132,7 @@ footer ul li {
 		margin-top: 30px;
 	}
 
-	#petites-bulles-2 {
+	#petits-liens-activites-2 {
 		width: 100%;
 		flex-direction: row;
 		justify-content: space-around;

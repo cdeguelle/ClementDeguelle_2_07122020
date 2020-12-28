@@ -22,12 +22,12 @@
 				</ul>
 			</nav>
 		</header>
-		<div id="Sous-titres">
+		<div id="subtitles">
 			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 			<h3>En plein centre ville ou en pleine nature</h3>
 		</div>
-		<div id="searchbar">
-			<button id="geobutton" onclick="getLocation()"><i class="fas fa-map-marker-alt"></i></button>
+		<div id="search-bar">
+			<button id="geo-button" onclick="getLocation()"><i class="fas fa-map-marker-alt"></i></button>
 			<script>
 				var x = document.getElementById("demo");
 
@@ -44,12 +44,12 @@
 				}
 			</script>
 			<form method="post" action="traitement.php" class="formulaire">
-				<input id="searchtxt" class="champ" type="search" placeholder="Marseille, France" />
-				<input id="searchbutton" class="bouton" type="submit" value="Rechercher" />
-				<button id="searchbutton-loupe"><i class="fas fa-search"></i></button>
+				<input id="search-txt" class="champ" type="search" placeholder="Marseille, France" />
+				<input id="search-button" class="bouton" type="submit" value="Rechercher" />
+				<button id="search-button-loupe"><i class="fas fa-search"></i></button>
 			</form>
 		</div>
-		<div id="Filtres">
+		<div id="filtres">
 			<p><b>Filtres</b></p>
 			<div id="f-eco" class="f-button">
 				<button id="f-eco-button" class="logo-button"><span class="f-logo"><i
@@ -73,7 +73,7 @@
 			<p>Plus de 500 logements sont disponibles dans cette ville</p>
 		</div>
 
-		<section id="reservations">
+		<article id="reservations">
 			<div id="hebergements">
 				<div id="titre-hebergements">
 					<h1>Hébergements à Marseille</h1>
@@ -182,12 +182,12 @@
 					</div>
 				</a>
 			</div>
-			<div id="chambres-pop">
+			<div id="pop">
 				<div id="titre-pop">
 					<h1>Les plus populaires</h1>
 					<i class="fas fa-chart-line"></i>
 				</div>
-				<div id="bulles-pop">
+				<div id="chambres-pop">
 					<a href="./oups.html">
 						<div id="populaire-1" class="populaire-x">
 							<img id="img-populaire-1"
@@ -244,13 +244,13 @@
 					</a>
 				</div>
 			</div>
-		</section>
+		</article>
 
-		<section id="Activites">
+		<section id="activites">
 			<div id="titre-activites">
 				<h1>Activités à Marseille</h1>
 			</div>
-			<div id="bulles-activites">
+			<div id="liens-activites">
 				<a href="./oups.html">
 					<div id="activite-1" class="activite-x">
 						<img id="img-activite-1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -258,7 +258,7 @@
 						<p>Vieux port</p>
 					</div>
 				</a>
-				<div class="petites-bulles">
+				<div class="petits-liens-activites">
 					<a href="./oups.html">
 						<div id="activite-2" class="activite-x">
 							<img id="img-activite-2"
@@ -284,7 +284,7 @@
 						<p>Parc National des Calanques</p>
 					</div>
 				</a>
-				<div id="petites-bulles-2" class="petites-bulles">
+				<div id="petits-liens-activites-2" class="petits-liens-activites">
 					<a href="./oups.html">
 						<div id="activite-5" class="activite-x">
 							<img id="img-activite-5"
