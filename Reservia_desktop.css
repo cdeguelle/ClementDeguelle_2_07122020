@@ -154,6 +154,7 @@ input[type="search"]::placeholder {
 	margin-left: 10px;
 	border-color: #F2F2F2;
 	transition: 0.3s;
+	font-size: 0.9em;
 }
 
 .logo-button {
