@@ -27,7 +27,7 @@ body {
 	color:  #0065FC;
 }
 
-#container {
+main {
 	width: 100%;
 	max-width: 1280px;
 	display: flex;
