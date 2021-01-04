@@ -42,8 +42,7 @@ header {
 nav ul {
 	display: flex;
 	justify-content: space-between;
-	padding-inline-start: 0px;
-	margin-block-start: 0px;
+	margin-top: 0px;
 }
 
 nav li {
@@ -166,7 +165,7 @@ input[type="search"]::placeholder {
 	padding-right: 20px;
 	font-weight: bold;
 	font-size: 1em;
-	padding-inline-start: 0px;
+	padding-left: 0px;
 	border: 2px solid #F2F2F2;
 	transition: all 0.5s;
 }
@@ -189,7 +188,6 @@ input[type="search"]::placeholder {
 	background-color: #DEEBFF;
 	width: 40px;
 	height: 40px;
-	padding: auto;
 	align-items: center;
 	justify-content: center;
 	margin-right: 10px;
@@ -497,6 +495,7 @@ footer ul li {
 
 	nav ul {
 		flex-wrap: wrap-reverse;
+		padding-left: 0;
 	}
 
 	nav li {
@@ -508,7 +507,7 @@ footer ul li {
 	#h-link {
 		width: 50%;
      	text-align: center;
-		border-bottom: solid 3px #0065fc;
+		border-bottom: solid 3px #f2f2f2;
 		color: #0065fc;
 		padding-bottom: 10px;
 		position: relative;
@@ -535,6 +534,13 @@ footer ul li {
 	/* + Suppression de la barre bleue au dessus du lien au survol + */
 	nav a:hover {
 		border-top: 0px solid #ffffff !important;
+	}
+
+	#a-link:hover,
+	#h-link:hover {
+		border-bottom: solid 3px #0065fc;
+		color: #0065fc;
+		padding-bottom: 10px;
 	}
 
 	#subtitles {
