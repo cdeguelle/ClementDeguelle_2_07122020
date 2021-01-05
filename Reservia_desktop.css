@@ -758,6 +758,7 @@ footer ul li {
 
 	nav ul {
 		flex-wrap: wrap-reverse;
+		padding-left: 0;
 	}
 
 	nav li {
@@ -868,19 +869,21 @@ footer ul li {
 		width: 100%;
 		margin: 0;
 		border-radius: 0 0 0;
-		padding-left: 30px;
+		padding-left: 0px;
 		height: auto;
 		padding-bottom: 40px;
 	}
 
 	#titre-pop {
 		margin-right: 60px;
+		margin-left: 30px;
 	}
 
 	.populaire-x {
 		width: 580px;
 		height: auto;
 		margin-right: 30px;
+		margin-left: 30px;
 	}
 
 	.populaire-x img {
@@ -1036,8 +1039,8 @@ footer ul li {
 		margin-top: 30px;
 	}
 
-	footer {
-		padding-left: 100px;
+	#a-propos {
+		padding-left: 50px;
 	}
 }
 
@@ -1129,6 +1132,6 @@ footer ul li {
 	}
 
 	footer {
-		padding-left: 100px;
+		justify-content: space-around;
 	}
 }
